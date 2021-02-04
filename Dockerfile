@@ -40,3 +40,5 @@ ENV LD_LIBRARY_PATH=/usr/local/lib
 
 EXPOSE 8001
 CMD ["datasette"]
+
+# docker run -p 8001:8001 -v /data/dev/workspace/data-processing/verkehrszaehldaten/data:/mnt/verkehrszaehldaten datasetteproject/datasette datasette -p 8001 -h 0.0.0.0 /mnt/verkehrszaehldaten/Velo_Fuss_Count.db /mnt/verkehrszaehldaten/MIV_Class_10_1.db --load-extension=spatialite --setting sql_time_limit_ms 3500 --setting facet_time_limit_ms 3500
