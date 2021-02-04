@@ -117,3 +117,6 @@ ENV/
 # macOS files
 .DS_Store
 node_modules
+
+# opendatabs-specific entries
+.idea/
